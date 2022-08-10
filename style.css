@@ -1,0 +1,196 @@
+:root {
+    --rojo:#DD0611;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --fuenteprincipal: 'Signika Negative', sans-serif;
+    --azul: #139CF7;
+}
+
+body {
+    background-color: rgb(126, 6, 6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--blanco);
+
+}
+
+.contenedorprincipal {
+    background-color: var(--negro);
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--fuenteprincipal);
+}
+
+.contenedorprincipal .contenedorlogin {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.contenedorprincipal .contenedorlogin > h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.contenedorprincipal .contenedorlogin > p,
+.contenedorprincipal .contenedorlogin > span {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: .5rem 0;
+}
+
+.contenedorprincipal .contenedorlogin input.input {
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.contenedorprincipal .contenedorlogin input.input:focus {
+    outline: solid 2px var(--rojo);
+}
+
+
+.contenedordatos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedordatos a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.contenedordatos a:hover {
+    text-decoration: underline;
+}
+
+.opciones > p {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+
+.boton {
+     text-transform: uppercase;
+     padding: 13px 0;
+     text-align: center;
+     cursor: pointer;
+     border: none;
+     font-weight: bold;
+     width: 100%;
+     display: block;
+     margin-bottom: 1rem;
+}
+
+.boton-iniciar {
+    border-radius: 5px;
+}
+
+.boton-iniciar:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+.boton-google {
+    background-color: var(--blanco);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.boton-google:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+.boton-facebook {
+    background-color: var(--azul);
+    text-align: center;
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+.boton-facebook:hover {
+    background-color: rgb(39, 103, 175);
+}
+
+.boton-youtube {
+    background-color: #FF0000;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+.boton-youtube:hover {
+    background-color: rgb(165, 5, 5);
+}
+
+.contenedorprincipal .imagen {
+    width: 50%;
+    height: 100%;
+}
+
+.imagen {
+    background-image: url(netf.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inputchek {
+    margin-left: .5rem;
+}
+
+@media screen and (max-width: 1350px) {
+     .contenedorprincipal {
+        width: 90%;
+     }
+}
+
+@media screen and (max-width: 1150px) {
+    .contenedorprincipal .contenedorlogin {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .contenedorprincipal .imagen {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    body {
+        padding: 4rem 0;
+    }
+
+    .contenedorprincipal .contenedorlogin > h2 {
+        padding-top: 18px;
+    }
+
+    .contenedorprincipal {
+        margin: 1rem;
+        height: 100%;
+        padding: 3rem 1rem;
+     }
+
+     .contenedorprincipal .contenedorlogin {
+        width: 95%;
+        margin: 0 auto;
+     }
+}
